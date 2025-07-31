@@ -10,13 +10,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background: #d5e1ef;
 }
 
 .container {
   width: 320px;
   height: fit-content;
 
-  padding: 16px;
+  padding: 16px 16px 40px 16px;
 
   display: flex;
   flex-direction: column;
@@ -26,13 +28,13 @@ body {
   justify-content: center;
 
   border-radius: 20px;
-  background-color: hsl(0, 0%, 100%);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffffff;
+  box-shadow: 0 40px 40px rgba(0, 0, 0, 0.1);
 }
 
 .qrcode {
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .container h1 {
@@ -51,10 +53,13 @@ body {
 }
 
 .container .text {
+  width: 288px;
+  row-gap: 16px;
+  padding: 0 16px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 16px;
 }
 
 @media (min-width: 768px) {
